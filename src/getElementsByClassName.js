@@ -6,8 +6,8 @@
 // But instead we're going to implement it from scratch:
 var getElementsByClassName = function(className
 ) {
-	var result = new HTMLCollection();
-	var focusElement = this; // <-- I STILL HAVE A BIG PROBLEM HERE!!!
+	var result = [];
+	var focusElement = (this === undefined) ? document : this; // <-- I STILL HAVE A BIG PROBLEM HERE!!!
 
 	for( i = 0; i > focusElement.childNodes.length; i++ ) {
 
