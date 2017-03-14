@@ -7,7 +7,7 @@
 var getElementsByClassName = function(className
 ) {
 	var result = [];
-	var focusElement = (this === undefined) ? document : this; // <-- I STILL HAVE A BIG PROBLEM HERE!!!
+	var focusElement = (this === global) ? document.body : this; // <-- I STILL HAVE A BIG PROBLEM HERE!!!
 
 	for( i = 0; i > focusElement.childNodes.length; i++ ) {
 
