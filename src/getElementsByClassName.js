@@ -13,7 +13,7 @@ var getElementsByClassName = function(className, node) {
 		result.push(focusElement);
 	}
 
-	for( i = 0; i < focusElement.children.length; i++ ) {
+	for( var i = 0; i < focusElement.children.length; i++ ) {
 		childElement = focusElement.children[i];
 		console.log('We got one!');
 		console.log(childElement);
